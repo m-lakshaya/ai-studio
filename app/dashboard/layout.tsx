@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { LayoutDashboard, Bot, Settings, Database, LogOut, BarChart3, Receipt, HelpCircle, FileText } from "lucide-react";
 import { ThemeToggle } from "@/components/theme-toggle";
 
@@ -54,8 +55,13 @@ export default function DashboardLayout({
                     </Link>
 
                     <div className="mt-4 p-4 bg-secondary/30 border border-border rounded-2xl flex items-center gap-3 group cursor-pointer hover:border-primary/50 transition-all shadow-sm">
-                        <div className="w-10 h-10 rounded-full bg-orange-200 border-2 border-primary/20 overflow-hidden shadow-inner flex items-center justify-center">
-                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop" alt="User" className="w-full h-full object-cover" />
+                        <div className="w-10 h-10 rounded-full bg-orange-200 border-2 border-primary/20 overflow-hidden shadow-inner flex items-center justify-center relative">
+                            <Image
+                                src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop"
+                                alt="User"
+                                fill
+                                className="object-cover"
+                            />
                         </div>
                         <div className="flex-1 min-w-0">
                             <p className="text-xs font-bold truncate">Alex Rivard</p>

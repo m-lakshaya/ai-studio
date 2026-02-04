@@ -48,7 +48,7 @@ export default function DashboardPage() {
             {/* Agent Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {/* Card 1 - Active */}
-                <Link href="/dashboard/knowledge?agent=Customer%20Support%20Bot" className="bg-card border border-border rounded-[2.5rem] p-8 hover:border-primary/40 transition-all group flex flex-col relative overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-1 text-left decoration-none">
+                <Link href="/dashboard/knowledge?agent=Customer%20Support%20Bot" className="bg-card border border-border rounded-[2.5rem] p-8 hover:border-primary/40 transition-all group flex flex-col relative overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-1 text-left no-underline">
                     <div className="absolute top-0 right-0 p-6">
                         <span className="bg-green-500/10 text-green-500 text-[10px] font-black uppercase tracking-widest px-4 py-2 rounded-full flex items-center gap-2 border border-green-500/10">
                             <div className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse shadow-[0_0_8px_rgba(34,197,94,0.5)]" />
@@ -86,7 +86,7 @@ export default function DashboardPage() {
                 </Link>
 
                 {/* Card 2 - Training */}
-                <Link href="/dashboard/knowledge?agent=Internal%20Research%20Tool" className="bg-card border border-border rounded-[2.5rem] p-8 hover:border-primary/40 transition-all group flex flex-col relative overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-1 text-left decoration-none">
+                <Link href="/dashboard/knowledge?agent=Internal%20Research%20Tool" className="bg-card border border-border rounded-[2.5rem] p-8 hover:border-primary/40 transition-all group flex flex-col relative overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-1 text-left no-underline">
                     <div className="absolute top-0 right-0 p-6">
                         <span className="bg-blue-500/10 text-blue-500 text-[10px] font-black uppercase tracking-widest px-4 py-2 rounded-full flex items-center gap-2 border border-blue-500/10">
                             <div className="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse" />
@@ -125,7 +125,7 @@ export default function DashboardPage() {
                 </Link>
 
                 {/* Deploy New Card */}
-                <Link href="/dashboard/knowledge?agent=New%20Agent" className="border-2 border-dashed border-border rounded-[2.5rem] p-8 flex flex-col items-center justify-center text-muted-foreground hover:bg-primary/[0.02] hover:text-foreground hover:border-primary transition-all cursor-pointer h-full min-h-[350px] gap-8 group shadow-inner decoration-none">
+                <Link href="/dashboard/knowledge?agent=New%20Agent" className="border-2 border-dashed border-border rounded-[2.5rem] p-8 flex flex-col items-center justify-center text-muted-foreground hover:bg-primary/[0.02] hover:text-foreground hover:border-primary transition-all cursor-pointer h-full min-h-[350px] gap-8 group shadow-inner no-underline">
                     <div className="bg-card border border-border p-8 rounded-[2rem] shadow-xl group-hover:scale-110 group-hover:shadow-primary/10 group-hover:border-primary transition-all duration-500">
                         <Plus className="w-12 h-12 text-primary" />
                     </div>
